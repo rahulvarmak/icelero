@@ -1,0 +1,30 @@
+{
+  "recipes": {
+    "devcassandra::default": "Prints hello world output"
+  },
+  "description": "Installs/Configures devcassandra",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer": "fission",
+  "dependencies": {
+  },
+  "conflicting": {
+  },
+  "recommendations": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "devcassandra",
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "version": "0.0.1",
+  "groupings": {
+  },
+  "maintainer_email": "rahul@fissionlabs.in",
+  "providing": {
+  },
+  "license": "All rights reserved"
+}

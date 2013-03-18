@@ -1,0 +1,30 @@
+{
+  "suggestions": {
+  },
+  "version": "0.0.1",
+  "recipes": {
+    "about_me::default": "Prints hello world output"
+  },
+  "conflicting": {
+  },
+  "platforms": {
+  },
+  "replacing": {
+  },
+  "recommendations": {
+  },
+  "attributes": {
+  },
+  "description": "Installs/Configures about_me",
+  "providing": {
+  },
+  "dependencies": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "about_me",
+  "groupings": {
+  },
+  "license": "All rights reserved",
+  "maintainer_email": "rahul@fissionlabs.in",
+  "maintainer": "Fissionlabs"
+}

@@ -1,0 +1,73 @@
+{
+  "conflicting": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "suggestions": {
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "maintainer_email": "rahul@fissionlabs.in",
+  "recommendations": {
+  },
+  "maintainer": "fissionlabs",
+  "replacing": {
+  },
+  "description": "Installs/Configures about_city",
+  "platforms": {
+  },
+  "license": "All rights reserved",
+  "attributes": {
+    "about_city/temperature": {
+      "display_name": "Temperature",
+      "choice": [
+
+      ],
+      "type": "string",
+      "description": "Current temperature in the city",
+      "required": "optional",
+      "calculated": false,
+      "recipes": [
+        "about_city::my_city"
+      ]
+    },
+    "about_city/rain": {
+      "display_name": "Raining",
+      "choice": [
+        "yes",
+        "no"
+      ],
+      "type": "string",
+      "description": "Is it raining? Yes or No",
+      "required": "recommended",
+      "calculated": false,
+      "default": "no",
+      "recipes": [
+        "about_city::my_city"
+      ]
+    },
+    "about_city/city_name": {
+      "display_name": "City Name",
+      "choice": [
+
+      ],
+      "type": "string",
+      "description": "The city where I currently live.",
+      "required": "required",
+      "calculated": false,
+      "recipes": [
+        "about_city::my_city"
+      ]
+    }
+  },
+  "version": "0.0.1",
+  "recipes": {
+    "about_city::default": "about_city",
+    "about_city::my_city": "Information about my city"
+  },
+  "name": "about_city",
+  "groupings": {
+  },
+  "providing": {
+  }
+}

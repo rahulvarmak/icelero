@@ -1,30 +1,31 @@
 {
-  "suggestions": {
-  },
   "version": "0.0.1",
-  "recipes": {
-    "about_me::default": "Prints hello world output"
-  },
-  "conflicting": {
-  },
-  "platforms": {
+  "attributes": {
   },
   "replacing": {
   },
-  "recommendations": {
-  },
-  "attributes": {
+  "conflicting": {
   },
   "description": "Installs/Configures about_me",
-  "providing": {
-  },
-  "dependencies": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "name": "about_me",
+  "recipes": {
+    "about_me::default": "Prints my first name and several of my favorite things as output."
+  },
+  "maintainer_email": "rahul@fissionlabs.in",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "platforms": {
+  },
   "groupings": {
   },
+  "providing": {
+  },
   "license": "All rights reserved",
-  "maintainer_email": "rahul@fissionlabs.in",
-  "maintainer": "Fissionlabs"
+  "maintainer": "Fissionlabs",
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "suggestions": {
+  },
+  "recommendations": {
+  }
 }

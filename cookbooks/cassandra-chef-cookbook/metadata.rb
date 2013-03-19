@@ -6,4 +6,4 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "1.0.0"
 
 
-recipe "cassandra-chef-cookbook::datastax","Installs Cassandra"
+recipe "cassandra-chef-cookbook::tarball","Installs Cassandra"

@@ -7,4 +7,4 @@ version          "1.0.0"
 
 
 
-recipe "cassandra-chef-cookbook::default","Installs Cassandra"
+recipe "cassandra-chef-cookbook::datastax","Installs Cassandra"

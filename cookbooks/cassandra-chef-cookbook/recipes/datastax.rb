@@ -20,7 +20,6 @@
 # This recipe relies on a PPA package and is Ubuntu/Debian specific. Please
 # keep this in mind.
 
-rightscale_marker :begin
 
 	apt_repository "datastax" do
 	  uri          "http://debian.datastax.com/community"
@@ -46,5 +45,4 @@ rightscale_marker :begin
 	  action [:enable, :start]
 	end
 
-rightscale_marker :end
 

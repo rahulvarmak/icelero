@@ -5,11 +5,5 @@ description      "Installs/Configures OpsCode Apache Cassandra"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "1.0.0"
 
-depends "build-essential"
-depends "apt"
-
-%w{ debian ubuntu centos redhat }.each do |os|
-    supports os
-end
 
 recipe "cassandra-chef-cookbook::datastax","Installs Cassandra"

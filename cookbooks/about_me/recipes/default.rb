@@ -15,5 +15,12 @@ rightscale_marker :begin
   hobby = node[:about_me][:favorite][:hobby]
   
   log "Hi, my name is #{first_name} and I like #{food}, #{drink} and #{hobby}."
+
+  package "mysql-server-5.1" do
+    action :install
+  end
+
+
+
   
 rightscale_marker :end

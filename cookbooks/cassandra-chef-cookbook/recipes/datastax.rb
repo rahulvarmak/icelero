@@ -32,11 +32,11 @@
 
 # DataStax Server Community Edition package will not install w/o this
 # one installed. MK.
-#	package "python-cql" do
-#	  action :install
-#	end
+	package "python-cql=1.0.10-1" do
+	  action :install
+	end
 
-	package "dsc12" do
+	package "dsc=1.0.10" do
 	  action :install
 	end
 

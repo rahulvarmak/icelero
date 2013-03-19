@@ -20,26 +20,31 @@
 # This recipe relies on a PPA package and is Ubuntu/Debian specific. Please
 # keep this in mind.
 
-apt_repository "datastax" do
-  uri          "http://debian.datastax.com/community"
-  distribution "stable"
-  components   ["main"]
-  key          "http://debian.datastax.com/debian/repo_key"
+rightscale_marker :begin
 
-  action :add
-end
+	apt_repository "datastax" do
+	  uri          "http://debian.datastax.com/community"
+	  distribution "stable"
+	  components   ["main"]
+	  key          "http://debian.datastax.com/debian/repo_key"
+
+	  action :add
+	end
 
 # DataStax Server Community Edition package will not install w/o this
 # one installed. MK.
-package "python-cql" do
-  action :install
-end
+	package "python-cql" do
+	  action :install
+	end
 
-package "dsc12" do
-  action :install
-end
+	package "dsc12" do
+	  action :install
+	end
 
-service "cassandra" do
-  supports :restart => true, :status => true
-  action [:enable, :start]
-end
+	service "cassandra" do
+	  supports :restart => true, :status => true
+	  action [:enable, :start]
+	end
+
+rightscale_marker :end
+

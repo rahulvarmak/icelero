@@ -16,10 +16,12 @@ rightscale_marker :begin
   
   log "Hi, my name is #{first_name} and I like #{food}, #{drink} and #{hobby}."
 
-cookbook_file "/tmp/testfile" do
-  mode "0644"
+directory "/tmp/something" do
+  owner "root"
+  group "root"
+  mode "0755"
+  action :create
 end
-
 
   
 rightscale_marker :end

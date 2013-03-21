@@ -27,7 +27,7 @@ execute "touch" do
 end
 
 execute "echo" do
- command "echo "deb http://debian.datastax.com/community stable main" >> /etc/apt/sources.list.d/cassandra.sources.list"
+ command "echo {deb http://debian.datastax.com/community stable main} >> /etc/apt/sources.list.d/cassandra.sources.list"
  action :run
 end
 

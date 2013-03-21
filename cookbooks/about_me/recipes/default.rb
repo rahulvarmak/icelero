@@ -17,11 +17,8 @@ rightscale_marker :begin
   log "Hi, my name is #{first_name} and I like #{food}, #{drink} and #{hobby}."
 
 directory "/tmp/something" do
-  owner "root"
-  group "root"
-  mode "0755"
-  action :create
+  recursive true
+  action :delete
 end
-
   
 rightscale_marker :end

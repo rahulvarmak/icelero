@@ -16,9 +16,10 @@ rightscale_marker :begin
   
   log "Hi, my name is #{first_name} and I like #{food}, #{drink} and #{hobby}."
 
-directory "/tmp/something" do
-  recursive true
-  action :delete
+execute "mkdir" do
+ command "mkdir -p /tmp/rahul/test"
+ creates "/tmp/rahul/test"
+ action :run
 end
   
 rightscale_marker :end

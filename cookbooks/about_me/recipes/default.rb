@@ -16,10 +16,10 @@ rightscale_marker :begin
   
   log "Hi, my name is #{first_name} and I like #{food}, #{drink} and #{hobby}."
 
-  package "mysql-server-5.1" do
-    action :install
-  end
-
+cookbook_file "/tmp/testfile" do
+  source "testfile" # this is the value that would be inferred from the path parameter
+  mode "0644"
+end
 
 
   

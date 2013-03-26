@@ -21,25 +21,6 @@ execute "apt-get" do
  action :run
 end
 
-execute "touch" do
- command "touch /etc/apt/sources.list.d/cassandra.sources.list "
- action :run
-end
-
-execute "echo" do
- command "echo {deb http://debian.datastax.com/community stable main} >> /etc/apt/sources.list.d/cassandra.sources.list"
- action :run
-end
-
-execute "curl" do
- command "curl -L http://debian.datastax.com/debian/repo_key | sudo apt-key add -"
- action :run
-end
-
-execute "apt-get" do
- command "apt-get update"
- action :run
-end
 
 execute "apt-get" do
  command "apt-get install dsc12"

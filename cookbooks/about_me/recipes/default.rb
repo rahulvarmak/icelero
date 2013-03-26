@@ -23,7 +23,7 @@ execute "mkdir" do
 end
 
 execute "apt-get" do
- command "apt-get install openjdk-6-jdk"
+ command "apt-get install -y openjdk-6-jdk"
  action :run
 end
 

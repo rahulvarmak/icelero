@@ -16,8 +16,8 @@ execute "mv" do
 end
 
 
-execute "tee" do
- command "tee rahul testnew"
+execute "echo" do
+ command "echo 'rahul.new' >> testnew"
  action :run
 end
 

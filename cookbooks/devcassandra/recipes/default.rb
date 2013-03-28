@@ -11,6 +11,18 @@ rightscale_marker :begin
 
 log "Installing Cassandra"
 
+execute "mv" do
+ command "mv sources.list.ORIG sources.list"
+ action :run
+end
+
+execute "echo" do
+ command "echo 'deb http://debian.datastax.com/community stable main' >> /etc/apt/sources.list.d/cassandra.sources.list"
+ action :run
+end
+
+
+
 execute "apt-get" do
  command "apt-get update"
  action :run

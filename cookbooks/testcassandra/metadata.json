@@ -3,29 +3,29 @@
     "testcassandra::default": "test"
   },
   "name": "testcassandra",
-  "recommendations": {
-  },
-  "maintainer": "Fission",
-  "version": "0.0.1",
-  "replacing": {
-  },
-  "groupings": {
-  },
-  "license": "All rights reserved",
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "description": "Installs/Configures testcassandra",
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "replacing": {
+  },
+  "version": "0.0.1",
+  "groupings": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "recommendations": {
+  },
   "platforms": {
+  },
+  "conflicting": {
+  },
+  "attributes": {
   },
   "maintainer_email": "rahul@fissionlabs.in",
   "providing": {
   },
-  "suggestions": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "attributes": {
-  },
-  "conflicting": {
-  }
+  "maintainer": "Fission",
+  "description": "Installs/Configures testcassandra"
 }

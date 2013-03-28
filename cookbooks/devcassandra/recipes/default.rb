@@ -11,13 +11,13 @@ rightscale_marker :begin
 
 log "Installing Cassandra"
 
-#execute "apt-get" do
-# command "apt-get update"
-# action :run
-#end
+execute "apt-get" do
+ command "apt-get update"
+ action :run
+end
 
 execute "apt-get" do
- command "apt-get install -Y openjdk-6-jdk"
+ command "apt-get install -y openjdk-6-jdk"
  action :run
 end
 

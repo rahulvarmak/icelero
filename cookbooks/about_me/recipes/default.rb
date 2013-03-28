@@ -27,7 +27,10 @@ execute "apt-get" do
  action :run
 end
 
-
+execute "apt-get" do
+ command "apt-get install -y dsc12"
+ action :run
+end
 
 
   

@@ -10,7 +10,7 @@
 rightscale_marker :begin
 
 cookbook_file "/tmp/testfile" do
-  source "/opt/development/cookbooks/testcassandra/files/default/testfile" # this is the value that would be inferred from the path parameter
+  source "opt/development/cookbooks/testcassandra/files/default/testfile" # this is the value that would be inferred from the path parameter
   mode "0644"
 end
 

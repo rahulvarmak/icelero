@@ -1,31 +1,31 @@
 {
-  "groupings": {
+  "recommendations": {
   },
-  "description": "Installs/Configures devcassandra",
-  "providing": {
-  },
+  "license": "All rights reserved",
+  "version": "0.0.1",
   "attributes": {
   },
-  "conflicting": {
-  },
   "maintainer_email": "rahul@fissionlabs.in",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "replacing": {
   },
-  "version": "0.0.1",
-  "maintainer": "fission",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "suggestions": {
-  },
-  "license": "All rights reserved",
-  "recommendations": {
-  },
-  "name": "devcassandra",
   "recipes": {
     "devcassandra::default": "installs cassandra"
   },
+  "groupings": {
+  },
+  "suggestions": {
+  },
   "platforms": {
-  }
+  },
+  "description": "Installs/Configures devcassandra",
+  "name": "devcassandra",
+  "providing": {
+  },
+  "conflicting": {
+  },
+  "maintainer": "fission"
 }

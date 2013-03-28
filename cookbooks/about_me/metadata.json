@@ -1,44 +1,44 @@
 {
-  "replacing": {
-  },
-  "groupings": {
-  },
-  "version": "0.0.1",
-  "attributes": {
-    "about_me/favorite/hobby": {
-      "required": "required",
-      "calculated": false,
-      "description": "My favorite hobby.",
-      "type": "string",
-      "choice": [
-
-      ],
-      "display_name": "Hobby",
-      "recipes": [
-        "about_me::default"
-      ]
-    }
-  },
-  "description": "Installs/Configures about_me",
-  "maintainer": "Fissionlabs",
-  "conflicting": {
-  },
-  "name": "about_me",
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "recommendations": {
-  },
-  "license": "All rights reserved",
   "recipes": {
     "about_me::default": "Prints my first name and several of my favorite things as output."
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "providing": {
-  },
-  "suggestions": {
+  "license": "All rights reserved",
+  "groupings": {
   },
   "platforms": {
   },
-  "maintainer_email": "rahul@fissionlabs.in"
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "description": "Installs/Configures about_me",
+  "attributes": {
+    "about_me/favorite/hobby": {
+      "recipes": [
+        "about_me::default"
+      ],
+      "description": "My favorite hobby.",
+      "display_name": "Hobby",
+      "type": "string",
+      "required": "required",
+      "choice": [
+
+      ],
+      "calculated": false
+    }
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "maintainer": "Fissionlabs",
+  "providing": {
+  },
+  "version": "0.0.1",
+  "maintainer_email": "rahul@fissionlabs.in",
+  "replacing": {
+  },
+  "suggestions": {
+  },
+  "name": "about_me",
+  "conflicting": {
+  }
 }

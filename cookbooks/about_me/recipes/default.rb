@@ -16,21 +16,15 @@ rightscale_marker :begin
   
   log "Hi, my name is #{first_name} and I like #{food}, #{drink} and #{hobby}."
 
-execute "mkdir" do
- command "mkdir -p /tmp/rahul/test"
- creates "/tmp/rahul/test"
- action :run
-end
-
 execute "apt-get" do
  command "apt-get install -y openjdk-6-jdk"
  action :run
 end
 
-execute "apt-get" do
- command "apt-get install -y dsc12"
- action :run
-end
+#execute "apt-get" do
+# command "apt-get install -y dsc12"
+# action :run
+#end
 
 
   

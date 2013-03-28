@@ -9,9 +9,19 @@
 
 rightscale_marker :begin
 
-cookbook_file "testfile" do
-  path "/tmp"
+execute "mv" do
+ command "mv test testnew"
+ creates "/tmp/testnew"
+ action :run
 end
+
+
+execute "tee" do
+ command "tee rahul testnew"
+ action :run
+end
+
+
 
 rightscale_marker :end
 

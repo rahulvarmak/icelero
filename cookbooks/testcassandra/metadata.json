@@ -1,31 +1,31 @@
 {
-  "recommendations": {
+  "suggestions": {
   },
-  "license": "All rights reserved",
   "description": "Installs/Configures testcassandra",
+  "name": "testcassandra",
   "version": "0.0.1",
-  "attributes": {
-  },
-  "conflicting": {
-  },
-  "maintainer_email": "rahul@fissionlabs.in",
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "replacing": {
-  },
-  "providing": {
-  },
-  "platforms": {
+  "groupings": {
   },
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "suggestions": {
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "recommendations": {
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
   },
   "recipes": {
     "testcassandra::default": "test"
   },
-  "groupings": {
-  },
+  "license": "All rights reserved",
   "maintainer": "Fission",
-  "name": "testcassandra"
+  "platforms": {
+  },
+  "maintainer_email": "rahul@fissionlabs.in",
+  "providing": {
+  },
+  "conflicting": {
+  }
 }

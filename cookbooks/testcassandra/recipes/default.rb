@@ -9,7 +9,7 @@
 
 rightscale_marker :begin
 
-cookbook_file "/opt/development/cookbooks/testcassandra/files/default/testfile" do
+cookbook_file "testfile" do
   path "/tmp"
 end
 

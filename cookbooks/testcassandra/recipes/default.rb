@@ -9,10 +9,9 @@
 
 rightscale_marker :begin
 
-execute "mkdir" do
- command "mkdir -p /tmp/rahul/test1"
- creates "/tmp/rahul/test1"
- action :run
+cookbook_file "/tmp/testfile" do
+  source "testfile" # this is the value that would be inferred from the path parameter
+  mode "0644"
 end
 
 rightscale_marker :end

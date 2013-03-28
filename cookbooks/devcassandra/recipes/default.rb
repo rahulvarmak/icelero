@@ -23,7 +23,7 @@ log "Installing Cassandra"
 
 
 execute "apt-get" do
- command "apt-get install dsc12"
+ command "apt-get install -y dsc12"
  action :run
 end
 

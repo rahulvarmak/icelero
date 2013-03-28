@@ -9,9 +9,8 @@
 
 rightscale_marker :begin
 
-cookbook_file "/tmp/testfile" do
-  path "/files/default"
-  action :create_if_missing
+cookbook_file "testfile" do
+  path "/tmp"
 end
 
 rightscale_marker :end

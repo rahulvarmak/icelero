@@ -17,7 +17,7 @@ execute "mv" do
 end
 
 execute "touch" do
- command "touch '/etc/apt/sources.list.d/cassandra.sources.list"
+ command "touch /etc/apt/sources.list.d/cassandra.sources.list"
  action :run
 end
 

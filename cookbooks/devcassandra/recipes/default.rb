@@ -16,10 +16,10 @@ execute "apt-get" do
  action :run
 end
 
-#execute "apt-get" do
-# command "apt-get install openjdk-6-jdk"
-# action :run
-#end
+execute "apt-get" do
+ command "apt-get install -Y openjdk-6-jdk"
+ action :run
+end
 
 
 #execute "apt-get" do

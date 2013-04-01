@@ -7,6 +7,12 @@ version          "0.0.1"
 
 depends "rightscale"
 
+attribute "testcassandra",
+  :display_name => "General Config Options",
+  :type => "hash"
+
+
+
 # Required Input #
 attribute "testcassandra/cluster_name",
    :display_name => "Cluster Name",

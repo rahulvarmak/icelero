@@ -11,9 +11,9 @@ rightscale_marker :begin
 
 
 template "/tmp/config.conf" do
-  source "config.conf.erb"
+  local true
+  source "/tmp/config.conf.erb"
 end
-
 
 
 

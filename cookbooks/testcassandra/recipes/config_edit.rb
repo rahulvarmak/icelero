@@ -9,9 +9,11 @@
 
 rightscale_marker :begin
 
-
 template "/tmp/config.conf" do
   source "config.conf.erb"
+  variables(
+    :cluster_name => node[:config_edit][:cluster_name]
+  )
 end
 
 

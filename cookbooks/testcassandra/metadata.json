@@ -1,27 +1,11 @@
 {
-  "providing": {
-  },
-  "name": "testcassandra",
-  "license": "All rights reserved",
   "suggestions": {
   },
   "platforms": {
   },
-  "description": "Installs/Configures testcassandra",
-  "conflicting": {
-  },
-  "maintainer_email": "rahul@fissionlabs.in",
-  "version": "0.0.1",
-  "recipes": {
-    "testcassandra::config_edit": "test"
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "groupings": {
-  },
   "attributes": {
     "testcassandra/cluster_name": {
       "calculated": false,
-      "type": "string",
       "description": "Cluster Name",
       "required": "required",
       "recipes": [
@@ -30,15 +14,31 @@
       "choice": [
 
       ],
-      "display_name": "Cluster Name"
+      "display_name": "Cluster Name",
+      "type": "string"
     }
   },
-  "replacing": {
+  "description": "Installs/Configures testcassandra",
+  "recipes": {
+    "testcassandra::config_edit": "test"
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "testcassandra",
+  "recommendations": {
   },
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
   "maintainer": "Fission",
-  "recommendations": {
+  "license": "All rights reserved",
+  "replacing": {
+  },
+  "providing": {
+  },
+  "maintainer_email": "rahul@fissionlabs.in",
+  "version": "0.0.1",
+  "groupings": {
+  },
+  "conflicting": {
   }
 }

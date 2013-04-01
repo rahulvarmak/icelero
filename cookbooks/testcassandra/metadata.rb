@@ -7,4 +7,12 @@ version          "0.0.1"
 
 depends "rightscale"
 
-recipe "testcassandra::default","test"
+# Required Input #
+attribute "testcassandra/cluster_name",
+   :display_name => "Cluster Name",
+   :description => "Cluster Name",
+   :required => "required",
+   :recipes => ["testcassandra::config_edit"]
+
+recipe "testcassandra::config_edit","test"
+

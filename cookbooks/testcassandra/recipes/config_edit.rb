@@ -14,6 +14,7 @@ template "/tmp/config.conf" do
   variables({
     :cluster_name => node[:config_edit][:cluster_name]
  } )
+  action :create
 end
 
 

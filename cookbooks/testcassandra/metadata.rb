@@ -7,6 +7,10 @@ version          "0.0.1"
 
 depends "rightscale"
 
+recipe "testcassandra::config_edit","test"
+
+
+
 attribute "testcassandra",
   :display_name => "General Config Options",
   :type => "hash"
@@ -20,5 +24,4 @@ attribute "testcassandra/cluster_name",
    :required => "required",
    :recipes => ["testcassandra::config_edit"]
 
-recipe "testcassandra::config_edit","test"
 

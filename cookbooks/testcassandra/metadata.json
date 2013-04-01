@@ -1,54 +1,54 @@
 {
-  "description": "Installs/Configures testcassandra",
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "recommendations": {
-  },
-  "maintainer": "Fission",
-  "maintainer_email": "rahul@fissionlabs.in",
-  "recipes": {
-    "testcassandra::config_edit": "test"
-  },
-  "replacing": {
-  },
-  "conflicting": {
+  "attributes": {
+    "testcassandra/cluster_name": {
+      "calculated": false,
+      "recipes": [
+        "testcassandra::config_edit"
+      ],
+      "choice": [
+
+      ],
+      "display_name": "Cluster Name",
+      "required": "required",
+      "description": "Cluster Name",
+      "type": "string"
+    },
+    "testcassandra": {
+      "calculated": false,
+      "recipes": [
+
+      ],
+      "choice": [
+
+      ],
+      "display_name": "General Config Options",
+      "required": "optional",
+      "type": "hash"
+    }
   },
   "platforms": {
   },
-  "groupings": {
+  "maintainer": "Fission",
+  "recipes": {
+    "testcassandra::config_edit": "test"
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
   },
   "suggestions": {
   },
-  "license": "All rights reserved",
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "attributes": {
-    "testcassandra/cluster_name": {
-      "choice": [
-
-      ],
-      "description": "Cluster Name",
-      "calculated": false,
-      "required": "required",
-      "type": "string",
-      "display_name": "Cluster Name",
-      "recipes": [
-        "testcassandra::config_edit"
-      ]
-    },
-    "testcassandra": {
-      "choice": [
-
-      ],
-      "calculated": false,
-      "required": "optional",
-      "type": "hash",
-      "display_name": "General Config Options",
-      "recipes": [
-
-      ]
-    }
+  "license": "All rights reserved",
+  "groupings": {
   },
+  "replacing": {
+  },
+  "maintainer_email": "rahul@fissionlabs.in",
+  "conflicting": {
+  },
+  "recommendations": {
+  },
+  "description": "Installs/Configures testcassandra",
   "providing": {
   },
   "version": "0.0.1",

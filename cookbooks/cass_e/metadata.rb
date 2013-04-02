@@ -13,6 +13,9 @@ supports "ubuntu"
 recipe "cass_e::install_httpd", "Installs the apache2 package on Ubuntu"
 recipe "cass_e::setup_index_page", "Creates a custom index page from a Chef template"
 recipe "cass_e::config_edit", "edits file on Ubuntu"
+recipe "cass_e::yaml", "edits yaml file"
+
+
 
 attribute "cass_e/your_name",
   :display_name => "Your Name",
@@ -24,6 +27,49 @@ attribute "cass_e/cluster_name",
   :display_name => "Cluster Name",
   :required => "required",
   :recipes => ["cass_e::config_edit"]
+
+attribute "cass_e/cluster_name",
+  :display_name => "Cluster Name",
+  :required => "required",
+  :recipes => ["cass_e::yaml"]
+
+attribute "cass_e/seeds",
+  :display_name => "Cluster Name",
+  :required => "required",
+  :recipes => ["cass_e::yaml"]
+
+attribute "cass_e/private_ip",
+  :display_name => "Cluster Name",
+  :required => "required",
+  :recipes => ["cass_e::yaml"]
+
+attribute "cass_e/snitch",
+  :display_name => "Cluster Name",
+  :required => "required",
+  :recipes => ["cass_e::yaml"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

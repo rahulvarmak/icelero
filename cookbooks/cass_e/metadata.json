@@ -1,58 +1,95 @@
 {
-  "platforms": {
-    "ubuntu": ">= 0.0.0"
-  },
-  "license": "All rights reserved",
-  "description": "Installs/Configures cass_e",
-  "version": "0.0.1",
-  "providing": {
-  },
-  "replacing": {
-  },
-  "recommendations": {
-  },
-  "suggestions": {
-  },
-  "attributes": {
-    "cass_e/your_name": {
-      "calculated": false,
-      "required": "required",
-      "type": "string",
-      "display_name": "Your Name",
-      "choice": [
-
-      ],
-      "recipes": [
-        "cass_e::setup_index_page"
-      ]
-    },
-    "cass_e/cluster_name": {
-      "calculated": false,
-      "required": "required",
-      "type": "string",
-      "display_name": "Cluster Name",
-      "choice": [
-
-      ],
-      "recipes": [
-        "cass_e::config_edit"
-      ]
-    }
-  },
-  "name": "cass_e",
   "recipes": {
-    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu",
+    "cass_e::config_edit": "edits file on Ubuntu",
     "cass_e::setup_index_page": "Creates a custom index page from a Chef template",
-    "cass_e::config_edit": "edits file on Ubuntu"
+    "cass_e::yaml": "edits yaml file",
+    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu"
   },
   "groupings": {
   },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "name": "cass_e",
+  "maintainer_email": "YOUR_EMAIL",
+  "license": "All rights reserved",
+  "version": "0.0.1",
   "conflicting": {
   },
-  "maintainer_email": "YOUR_EMAIL",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "attributes": {
+    "cass_e/seeds": {
+      "calculated": false,
+      "recipes": [
+        "cass_e::yaml"
+      ],
+      "choice": [
+
+      ],
+      "required": "required",
+      "type": "string",
+      "display_name": "Cluster Name"
+    },
+    "cass_e/your_name": {
+      "calculated": false,
+      "recipes": [
+        "cass_e::setup_index_page"
+      ],
+      "choice": [
+
+      ],
+      "required": "required",
+      "type": "string",
+      "display_name": "Your Name"
+    },
+    "cass_e/private_ip": {
+      "calculated": false,
+      "recipes": [
+        "cass_e::yaml"
+      ],
+      "choice": [
+
+      ],
+      "required": "required",
+      "type": "string",
+      "display_name": "Cluster Name"
+    },
+    "cass_e/snitch": {
+      "calculated": false,
+      "recipes": [
+        "cass_e::yaml"
+      ],
+      "choice": [
+
+      ],
+      "required": "required",
+      "type": "string",
+      "display_name": "Cluster Name"
+    },
+    "cass_e/cluster_name": {
+      "calculated": false,
+      "recipes": [
+        "cass_e::yaml"
+      ],
+      "choice": [
+
+      ],
+      "required": "required",
+      "type": "string",
+      "display_name": "Cluster Name"
+    }
+  },
+  "providing": {
+  },
+  "recommendations": {
+  },
+  "platforms": {
+    "ubuntu": ">= 0.0.0"
+  },
+  "replacing": {
+  },
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "maintainer": "YOUR_COMPANY_NAME"
+  "description": "Installs/Configures cass_e",
+  "suggestions": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n"
 }

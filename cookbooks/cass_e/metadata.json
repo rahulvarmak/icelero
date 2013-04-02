@@ -1,45 +1,58 @@
 {
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "description": "Installs/Configures cass_e",
-  "maintainer_email": "YOUR_EMAIL",
-  "version": "0.0.1",
-  "groupings": {
-  },
-  "conflicting": {
-  },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "recipes": {
-    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu",
-    "cass_e::setup_index_page": "Creates a custom index page from a Chef template"
-  },
-  "recommendations": {
-  },
-  "license": "All rights reserved",
   "attributes": {
     "cass_e/your_name": {
-      "choice": [
-
-      ],
+      "display_name": "Your Name",
+      "required": "required",
       "type": "string",
       "recipes": [
         "cass_e::setup_index_page"
       ],
       "calculated": false,
-      "display_name": "Your Name",
-      "required": "required"
+      "choice": [
+
+      ]
+    },
+    "cass_e/cluster_name": {
+      "display_name": "Cluster Name",
+      "required": "required",
+      "type": "string",
+      "recipes": [
+        "cass_e::config_edit"
+      ],
+      "calculated": false,
+      "choice": [
+
+      ]
     }
-  },
-  "replacing": {
   },
   "platforms": {
     "ubuntu": ">= 0.0.0"
   },
   "maintainer": "YOUR_COMPANY_NAME",
-  "name": "cass_e",
-  "suggestions": {
+  "version": "0.0.1",
+  "groupings": {
+  },
+  "recommendations": {
   },
   "providing": {
+  },
+  "license": "All rights reserved",
+  "description": "Installs/Configures cass_e",
+  "recipes": {
+    "cass_e::setup_index_page": "Creates a custom index page from a Chef template",
+    "cass_e::config_edit": "edits file on Ubuntu",
+    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu"
+  },
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "name": "cass_e",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "suggestions": {
+  },
+  "replacing": {
+  },
+  "conflicting": {
   }
 }

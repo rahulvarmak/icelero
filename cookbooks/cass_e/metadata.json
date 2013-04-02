@@ -1,58 +1,58 @@
 {
-  "attributes": {
-    "cass_e/your_name": {
-      "display_name": "Your Name",
-      "required": "required",
-      "type": "string",
-      "recipes": [
-        "cass_e::setup_index_page"
-      ],
-      "calculated": false,
-      "choice": [
-
-      ]
-    },
-    "cass_e/cluster_name": {
-      "display_name": "Cluster Name",
-      "required": "required",
-      "type": "string",
-      "recipes": [
-        "cass_e::config_edit"
-      ],
-      "calculated": false,
-      "choice": [
-
-      ]
-    }
-  },
   "platforms": {
     "ubuntu": ">= 0.0.0"
   },
-  "maintainer": "YOUR_COMPANY_NAME",
-  "version": "0.0.1",
-  "groupings": {
-  },
-  "recommendations": {
-  },
-  "providing": {
-  },
   "license": "All rights reserved",
   "description": "Installs/Configures cass_e",
-  "recipes": {
-    "cass_e::setup_index_page": "Creates a custom index page from a Chef template",
-    "cass_e::config_edit": "edits file on Ubuntu",
-    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu"
-  },
-  "dependencies": {
-    "rightscale": ">= 0.0.0"
-  },
-  "maintainer_email": "YOUR_EMAIL",
-  "name": "cass_e",
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "suggestions": {
+  "version": "0.0.1",
+  "providing": {
   },
   "replacing": {
   },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "attributes": {
+    "cass_e/your_name": {
+      "calculated": false,
+      "required": "required",
+      "type": "string",
+      "display_name": "Your Name",
+      "choice": [
+
+      ],
+      "recipes": [
+        "cass_e::setup_index_page"
+      ]
+    },
+    "cass_e/cluster_name": {
+      "calculated": false,
+      "required": "required",
+      "type": "string",
+      "display_name": "Cluster Name",
+      "choice": [
+
+      ],
+      "recipes": [
+        "cass_e::config_edit"
+      ]
+    }
+  },
+  "name": "cass_e",
+  "recipes": {
+    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu",
+    "cass_e::setup_index_page": "Creates a custom index page from a Chef template",
+    "cass_e::config_edit": "edits file on Ubuntu"
+  },
+  "groupings": {
+  },
   "conflicting": {
-  }
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "maintainer": "YOUR_COMPANY_NAME"
 }

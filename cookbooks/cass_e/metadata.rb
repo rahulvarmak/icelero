@@ -13,9 +13,9 @@ supports "ubuntu"
 recipe "cass_e::install_httpd", "Installs the apache2 package on Ubuntu"
 recipe "cass_e::setup_index_page", "Creates a custom index page from a Chef template"
 
-attribute "httpd/your_name",
+attribute "cass_e/your_name",
   :display_name => "Your Name",
   :required => "required",
-  :recipes => ["httpd::setup_index_page"]
+  :recipes => ["cass_e::setup_index_page"]
 
 

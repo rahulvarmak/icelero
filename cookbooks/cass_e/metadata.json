@@ -2,44 +2,44 @@
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "replacing": {
-  },
-  "providing": {
+  "description": "Installs/Configures cass_e",
+  "maintainer_email": "YOUR_EMAIL",
+  "version": "0.0.1",
+  "groupings": {
   },
   "conflicting": {
   },
-  "suggestions": {
-  },
-  "name": "cass_e",
-  "groupings": {
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "recipes": {
+    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu",
+    "cass_e::setup_index_page": "Creates a custom index page from a Chef template"
   },
   "recommendations": {
   },
   "license": "All rights reserved",
-  "recipes": {
-    "cass_e::setup_index_page": "Creates a custom index page from a Chef template",
-    "cass_e::install_httpd": "Installs the apache2 package on Ubuntu"
-  },
-  "version": "0.0.1",
-  "description": "Installs/Configures cass_e",
   "attributes": {
-    "httpd/your_name": {
-      "calculated": false,
-      "type": "string",
-      "display_name": "Your Name",
-      "recipes": [
-        "httpd::setup_index_page"
-      ],
+    "cass_e/your_name": {
       "choice": [
 
       ],
+      "type": "string",
+      "recipes": [
+        "cass_e::setup_index_page"
+      ],
+      "calculated": false,
+      "display_name": "Your Name",
       "required": "required"
     }
   },
-  "maintainer": "YOUR_COMPANY_NAME",
+  "replacing": {
+  },
   "platforms": {
     "ubuntu": ">= 0.0.0"
   },
-  "maintainer_email": "YOUR_EMAIL"
+  "maintainer": "YOUR_COMPANY_NAME",
+  "name": "cass_e",
+  "suggestions": {
+  },
+  "providing": {
+  }
 }

@@ -13,32 +13,32 @@ recipe "cassandra::cassandra_cluster_1","installs cassandra"
 recipe "cassandra::cassandra_install_1","clusters cassandra"
 
 # Required Input #
-attribute "devcassandra/cluster_name",
+attribute "cassandra/cluster_name",
    :display_name => "cluster name ",
    :description => "cluster name",
    :required => "required",
    :recipes => ["cassandra::cassandra_cluster_1"]
 
 # Required Input #
-attribute "devcassandra/seeds",
+attribute "cassandra/seeds",
    :display_name => "seed node ip ",
    :description => "seed node ip",
    :required => "required",
    :recipes => ["cassandra::cassandra_cluster_1"]
 
 # Required Input #
-attribute "devcassandra/private_ip",
+attribute "cassandra/private_ip",
    :display_name => "private ip ",
    :description => "private ip",
    :required => "required",
    :recipes => ["cassandra::cassandra_cluster_1"]
 
 # Required Input #
-attribute "devcassandra/snitch",
+attribute "cassandra/snitch",
    :display_name => "snitch name ",
    :description => "snitch name",
    :required => "required",
-   :recipes => ["devcassandra::cassandra_cluster_1"]
+   :recipes => ["cassandra::cassandra_cluster_1"]
 
 
 

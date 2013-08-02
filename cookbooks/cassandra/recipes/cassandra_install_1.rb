@@ -53,6 +53,21 @@ execute "service" do
  action :run
 end
 
+execute "mkdir" do
+ command "mkdir -p /mnt/ephemeral/var/lib/"
+ action :run
+end
+
+execute "cp" do
+ command "cp -r /var/lib/cassandra/ /mnt/ephemeral/var/lib/"
+ action :run
+end
+
+execute "chown" do
+ command "chown -R cassandra:cassandra /mnt"
+ action :run
+end
+
 execute "rm" do
  command "rm -rf /var/lib/cassandra/data/system/*"
  action :run

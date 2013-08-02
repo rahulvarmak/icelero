@@ -9,8 +9,8 @@ depends "rightscale"
 
 
 recipe "cassandra::default","installs cassandra"
-recipe "cassandra::cassandra_cluster_1","installs cassandra"
-recipe "cassandra::cassandra_install_1","clusters cassandra"
+recipe "cassandra::cassandra_cluster_1","clusters cassandra"
+recipe "cassandra::cassandra_install_1","installs cassandra"
 
 # Required Input #
 attribute "cassandra/cluster_name",

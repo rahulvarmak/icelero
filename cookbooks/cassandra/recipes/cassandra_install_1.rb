@@ -11,6 +11,12 @@ rightscale_marker :begin
 
 log "Installing Cassandra"
 
+execute "mv" do
+ command "mv /etc/apt/sources.list.ORIG /etc/apt/sources.list"
+ action :run
+end
+
+
 
 execute "touch" do
  command "touch /etc/apt/sources.list.d/cassandra.sources.list"

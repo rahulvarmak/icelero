@@ -1,98 +1,98 @@
 {
-  "providing": {
-  },
-  "replacing": {
-  },
-  "name": "cassandra",
   "version": "0.0.1",
-  "groupings": {
+  "providing": {
   },
   "conflicting": {
   },
-  "attributes": {
-    "cassandra/private_ip": {
-      "required": "required",
-      "type": "string",
-      "display_name": "private ip ",
-      "calculated": false,
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "private ip"
-    },
-    "cassandra/snitch": {
-      "required": "required",
-      "type": "string",
-      "display_name": "snitch name ",
-      "calculated": false,
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "snitch name"
-    },
-    "cassandra/seeds": {
-      "required": "required",
-      "type": "string",
-      "display_name": "seed node ip ",
-      "calculated": false,
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "seed node ip"
-    },
-    "cassandra/initial_token": {
-      "required": "required",
-      "type": "string",
-      "display_name": "random partitioner token",
-      "calculated": false,
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "random partitioner token"
-    },
-    "cassandra/cluster_name": {
-      "required": "required",
-      "type": "string",
-      "display_name": "cluster name ",
-      "calculated": false,
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "cluster name"
-    }
-  },
-  "recipes": {
-    "cassandra::default": "installs cassandra",
-    "cassandra::cassandra_cluster_1": "clusters cassandra",
-    "cassandra::cassandra_install_1": "installs cassandra"
+  "replacing": {
   },
   "maintainer_email": "rahul@fissionlabs.in",
+  "description": "Installs/Configures cassandra",
+  "suggestions": {
+  },
+  "maintainer": "fission",
+  "license": "All rights reserved",
+  "name": "cassandra",
+  "recipes": {
+    "cassandra::cassandra_cluster_1": "clusters cassandra",
+    "cassandra::default": "installs cassandra",
+    "cassandra::cassandra_install_1": "installs cassandra"
+  },
+  "groupings": {
+  },
   "dependencies": {
     "rightscale": ">= 0.0.0"
+  },
+  "attributes": {
+    "cassandra/seeds": {
+      "type": "string",
+      "choice": [
+
+      ],
+      "display_name": "seed node ip ",
+      "description": "seed node ip",
+      "calculated": false,
+      "required": "required",
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ]
+    },
+    "cassandra/snitch": {
+      "type": "string",
+      "choice": [
+
+      ],
+      "display_name": "snitch name ",
+      "description": "snitch name",
+      "calculated": false,
+      "required": "required",
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ]
+    },
+    "cassandra/initial_token": {
+      "type": "string",
+      "choice": [
+
+      ],
+      "display_name": "random partitioner token",
+      "description": "random partitioner token",
+      "calculated": false,
+      "required": "required",
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ]
+    },
+    "cassandra/private_ip": {
+      "type": "string",
+      "choice": [
+
+      ],
+      "display_name": "private ip ",
+      "description": "private ip",
+      "calculated": false,
+      "required": "required",
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ]
+    },
+    "cassandra/cluster_name": {
+      "type": "string",
+      "choice": [
+
+      ],
+      "display_name": "cluster name ",
+      "description": "cluster name",
+      "calculated": false,
+      "required": "required",
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ]
+    }
   },
   "platforms": {
   },
   "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "description": "Installs/Configures cassandra",
-  "suggestions": {
-  },
   "recommendations": {
-  },
-  "license": "All rights reserved",
-  "maintainer": "fission"
+  }
 }

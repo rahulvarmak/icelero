@@ -1,6 +1,6 @@
 # Cassandra storage config YAML 
 cluster_name: '<%= node[:cassandra][:cluster_name] %>'
-initial_token:'<%= node[:cassandra][:initial_token] %>'
+initial_token: '<%= node[:cassandra][:initial_token] %>'
 hinted_handoff_enabled: true
 max_hint_window_in_ms: 10800000 # 3 hours
 hinted_handoff_throttle_in_kb: 1024
@@ -8,7 +8,7 @@ max_hints_delivery_threads: 2
 authenticator: org.apache.cassandra.auth.AllowAllAuthenticator
 authorizer: org.apache.cassandra.auth.AllowAllAuthorizer
 permissions_validity_in_ms: 2000
-partitioner: org.apache.cassandra.dht.Murmur3Partitioner
+partitioner: org.apache.cassandra.dht.RandomPartitioner
 data_file_directories:
     - /mnt/ephemeral/var/lib/cassandra/data
 commitlog_directory: /mnt/ephemeral/var/lib/cassandra/commitlog

@@ -40,6 +40,12 @@ attribute "cassandra/snitch",
    :required => "required",
    :recipes => ["cassandra::cassandra_cluster_1"]
 
+# Required Input #
+attribute "cassandra/initial_token",
+   :display_name => "random partitioner token",
+   :description => "random partitioner token",
+   :required => "required",
+   :recipes => ["cassandra::cassandra_cluster_1"]
 
 
 

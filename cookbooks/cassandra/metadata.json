@@ -1,53 +1,26 @@
 {
+  "providing": {
+  },
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "version": "0.0.1",
-  "suggestions": {
+  "recipes": {
+    "cassandra::cassandra_cluster_1": "clusters cassandra",
+    "cassandra::cassandra_install_1": "installs cassandra",
+    "cassandra::default": "installs cassandra"
+  },
+  "replacing": {
   },
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
   "attributes": {
-    "cassandra/private_ip": {
-      "display_name": "private ip ",
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "private ip",
-      "required": "required",
-      "calculated": false,
-      "type": "string"
-    },
-    "cassandra/seeds": {
-      "display_name": "seed node ip ",
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "seed node ip",
-      "required": "required",
-      "calculated": false,
-      "type": "string"
-    },
-    "cassandra/cluster_name": {
-      "display_name": "cluster name ",
-      "recipes": [
-        "cassandra::cassandra_cluster_1"
-      ],
-      "choice": [
-
-      ],
-      "description": "cluster name",
-      "required": "required",
-      "calculated": false,
-      "type": "string"
-    },
     "cassandra/snitch": {
-      "display_name": "snitch name ",
+      "type": "string",
+      "calculated": false,
       "recipes": [
         "cassandra::cassandra_cluster_1"
       ],
@@ -56,30 +29,70 @@
       ],
       "description": "snitch name",
       "required": "required",
+      "display_name": "snitch name "
+    },
+    "cassandra/private_ip": {
+      "type": "string",
       "calculated": false,
-      "type": "string"
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ],
+      "choice": [
+
+      ],
+      "description": "private ip",
+      "required": "required",
+      "display_name": "private ip "
+    },
+    "cassandra/seeds": {
+      "type": "string",
+      "calculated": false,
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ],
+      "choice": [
+
+      ],
+      "description": "seed node ip",
+      "required": "required",
+      "display_name": "seed node ip "
+    },
+    "cassandra/initial_token": {
+      "type": "string",
+      "calculated": false,
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ],
+      "choice": [
+
+      ],
+      "description": "random partitioner token",
+      "required": "required",
+      "display_name": "random partitioner token"
+    },
+    "cassandra/cluster_name": {
+      "type": "string",
+      "calculated": false,
+      "recipes": [
+        "cassandra::cassandra_cluster_1"
+      ],
+      "choice": [
+
+      ],
+      "description": "cluster name",
+      "required": "required",
+      "display_name": "cluster name "
     }
   },
-  "providing": {
+  "conflicting": {
   },
-  "name": "cassandra",
-  "maintainer_email": "rahul@fissionlabs.in",
-  "recipes": {
-    "cassandra::cassandra_cluster_1": "clusters cassandra",
-    "cassandra::cassandra_install_1": "installs cassandra",
-    "cassandra::default": "installs cassandra"
-  },
-  "license": "All rights reserved",
-  "description": "Installs/Configures cassandra",
   "platforms": {
   },
-  "maintainer": "fission",
-  "recommendations": {
+  "name": "cassandra",
+  "suggestions": {
   },
-  "groupings": {
-  },
-  "replacing": {
-  },
-  "conflicting": {
-  }
+  "maintainer_email": "rahul@fissionlabs.in",
+  "description": "Installs/Configures cassandra",
+  "license": "All rights reserved",
+  "maintainer": "fission"
 }

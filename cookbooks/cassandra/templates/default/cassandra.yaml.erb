@@ -1,6 +1,6 @@
 # Cassandra storage config YAML 
 cluster_name: '<%= node[:cassandra][:cluster_name] %>'
-initial_token:
+initial_token:'<%= node[:cassandra][:initial_token] %>'
 hinted_handoff_enabled: true
 max_hint_window_in_ms: 10800000 # 3 hours
 hinted_handoff_throttle_in_kb: 1024
